@@ -1,0 +1,122 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+p{
+    font-family: Dm Sans;
+    font-size: 1.5em;
+    font-weight:500;
+    
+}
+
+span{
+    color:grey;
+    font-family: DM Sans;
+    margin-left:0.7rem;
+   
+}
+
+
+.onglet:hover{
+    background-color:  #F5F5F5;
+}
+
+.onglet{
+    padding:0.7rem;
+    max-height:2rem;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    border-radius:0.45em 0.45rem 0.45rem 0.45rem;
+    
+}
+
+svg:hover{
+    transform: scale(1.25);
+}
+.container_sidebar{
+    display:flex;
+    flex-direction: column;
+    height:65vh;
+    max-width:80%;
+    padding:1rem 3rem;
+   
+    
+
+}
+
+/*responsive faire pour tablette et telephone */
+@media (min-width:300px) and (max-width:789px){
+    aside{
+        display:none;
+    }
+}
+a {
+    text-decoration: none;
+  }
+.Navbar{
+    
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
+    display:flex;
+    height:13vh;
+}
+
+aside{
+    position:fixed;
+    width:18.52%;
+    background-color: #FFFFFF;
+    
+    
+    height:100vh;
+ 
+    
+} 
+.logo{
+    
+    margin-left:3rem;
+    margin-right:5%;
+    
+}
+
+
+
+.Navbarleft{
+    display: flex;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    
+    height: auto;
+    padding-top: 13vh;
+    
+    
+}
+
+.grid{
+    margin-left:18.52%;
+    background-color: #F5F5F5;
+    width:100%;
+}
+
+.Navbarleft{
+    display:flex;
+    width: 18.52%;
+}
+
+.Navbarright{
+    display:flex;
+    
+   width:81.48%;
+    
+}
+
