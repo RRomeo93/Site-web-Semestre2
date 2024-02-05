@@ -48,8 +48,12 @@ function SignIn() {
         </div>
         <button type="submit" className="signin-button">Sign In</button>
         <div className="signin-footer">
-          <span>Don't have an account? <a href="/signup">Sign up</a></span>
-          <a href="/forgot-password">Forgot your password?</a>
+          <span>
+            Don't have an account? 
+          </span>
+          <br></br>
+          <a href="/inscription">Sign up </a>
+          <a href="/forgot-password">| Forgot your password?</a>
         </div>
       </form>
     </div>
