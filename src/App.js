@@ -3,7 +3,7 @@
 /* Pour mettre sur le github: 
 git add .
 git commit -m "Commentaire de votre choix"
-git push origin (branche) */
+git push origin (branche */
 
 /* git checkout master ( pour aller sur la branche)
 git pull origin master (pour récupérer les modifications du github en local)
