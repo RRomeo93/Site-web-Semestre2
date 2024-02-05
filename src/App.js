@@ -2,7 +2,7 @@
 // import mon fichier style_navbar.css
 import './css/style_sidebar.css';
 import * as Images from './assets/images';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Accueil from './components/Accueil';
@@ -89,6 +89,7 @@ function Sidebar() {
 }
 
 function Nav() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return <>
     <nav class="Navbar">
       <div class="Navbarleft">
@@ -102,8 +103,16 @@ function Nav() {
         </div>
         <div class="bouton_navbar">
           test
+          <div className="Signconnec">
+        {isLoggedIn ? (
+          <button onClick={() => setIsLoggedIn(false)}>Sign Out</button>
+        ) : (
+          <Link to="/SignIn">Sign In</Link>
+        )}
+      </div>
         </div>
       </div>
+
     </nav>
   </>
 }
