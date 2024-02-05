@@ -14,6 +14,7 @@ p{
     
 }
 
+
 span{
     color:grey;
     font-family: DM Sans;
@@ -42,12 +43,13 @@ svg:hover{
 .container_sidebar{
     display:flex;
     flex-direction: column;
-    height:65vh;
-    max-width:80%;
+    height:auto;
+    width:80%;
     padding:1rem 3rem;
-   
-    
+}
 
+.test{
+    margin-top:17.5rem;
 }
 
 /*responsive faire pour tablette et telephone */
@@ -70,7 +72,7 @@ a {
 
 aside{
     position:fixed;
-    width:18.52%;
+    max-width:18.52%;
     background-color: #FFFFFF;
     
     
@@ -115,8 +117,43 @@ aside{
 
 .Navbarright{
     display:flex;
-    
+    background-color: blue;
    width:81.48%;
+   align-items: center;
     
 }
 
+.Navbarright_input{
+    background-color: #F5F5F5;
+    border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+    width: 22rem;
+    height:5.5vh;
+    align-items: center;  
+    display:flex;
+    margin-left:3.5rem;
+    
+
+}
+.Navbarright input{
+    border:none;
+    outline:none;
+    background-color: #F5F5F5;
+    margin-left:1.5rem;
+
+}
+
+.Navbarright input::placeholder{
+    font-family: DM Sans, sans-serif;;
+}
+
+.loupe{
+    margin-left:0.6rem;
+}
+
+.bouton_navbarright{
+    right:0;
+}
+
+.bouton_navbar{
+    margin-left:55%;
+}
