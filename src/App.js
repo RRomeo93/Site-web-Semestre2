@@ -1,5 +1,17 @@
 
 // import mon fichier style_navbar.css
+/* Pour mettre sur le github: 
+git add .
+git commit -m "Commentaire de votre choix"
+git push origin (branche) */
+
+/* git checkout master ( pour aller sur la branche)
+git pull origin master (pour récupérer les modifications du github en local)
+git merge (branche) (pour fusionner la branche avec la master dans ton pc)
+git push origin master (pour mettre sur le github) ( depot distant) */
+
+
+
 import './css/style_sidebar.css';
 import * as Images from './assets/images';
 import React, { useState } from 'react';

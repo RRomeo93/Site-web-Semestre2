@@ -49,7 +49,7 @@ function SignIn() {
         <button type="submit" className="signin-button">Sign In</button>
         <div className="signin-footer">
           <span>
-            Don't have an account? 
+            Don't have an account?j 
           </span>
           <br></br>
           <a href="/inscription">Sign up </a>
