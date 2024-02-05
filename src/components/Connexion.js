@@ -53,7 +53,7 @@ function SignIn() {
           </span>
           <br></br>
           <a href="/inscription">Sign up </a>
-          <a href="/forgot-password">| Forgot your password?</a>
+          <a href="/forgot-password">| Forgot your password ?</a>
         </div>
       </form>
     </div>
