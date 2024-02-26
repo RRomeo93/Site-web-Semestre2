@@ -6,3 +6,6 @@ export { ReactComponent as Messages } from './messages.svg';
 export { ReactComponent as ShoppingBag } from './shoppingbag.svg';
 export { ReactComponent as ShoppingCart } from './shoppingcart.svg';
 export { ReactComponent as Loupe } from './loupe.svg';
+export { ReactComponent as AudiA3 } from './car-audi-a3.svg';
+export { ReactComponent as Boite } from './boite.svg';
+export { ReactComponent as Place } from './place.svg';

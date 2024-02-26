@@ -1,6 +1,6 @@
 
 // import mon fichier style_navbar.css
-/* Pour mettre sur le github: 
+/* Pour mettre sur le github 
 git add .
 git commit -m "Commentaire de votre choix"
 git push origin (branche */
@@ -10,8 +10,8 @@ git pull origin master (pour récupérer les modifications du github en local)
 git merge (branche) (pour fusionner la branche avec la master dans ton pc)
 git push origin master (pour mettre sur le github) ( depot distant) */
 
-
-
+// git checkout -b branche // pour creer
+// git push -u origin test
 import './css/style_sidebar.css';
 import * as Images from './assets/images';
 import React, { useState } from 'react';
@@ -114,14 +114,14 @@ function Nav() {
           <input placeholder='Search a car ..'></input>
         </div>
         <div class="bouton_navbar">
-          test
+      
           <div className="Signconnec">
-        {isLoggedIn ? (
-          <button onClick={() => setIsLoggedIn(false)}>Sign Out</button>
-        ) : (
-          <Link to="/SignIn">Sign In</Link>
-        )}
-      </div>
+            {isLoggedIn ? (
+              <button onClick={() => setIsLoggedIn(false)}>Sign Out</button>
+            ) : (
+              <Link to="/SignIn">Sign In</Link>
+            )}
+          </div>
         </div>
       </div>
 
