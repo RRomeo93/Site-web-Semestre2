@@ -6,7 +6,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    min-height: 70vh; 
+    min-height: 68vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,8 +46,11 @@
     width: 100%;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #B1B5C3;
+    border-radius: 10px;
+    height:2rem;
+    margin-top:1.5rem;
+    outline:none;
   }
   
   .signin-remember {
@@ -58,7 +61,8 @@
   .signin-button {
     width: 100%;
     padding: 0.5rem;
-    background-color: #6c63ff;
+    background-color: #A162F7;
+    margin-top:1rem;
     border: none;
     border-radius: 4px;
     color: #fff;

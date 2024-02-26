@@ -1,5 +1,8 @@
 import React from 'react';
 import '../css/style_acheter.css';
+
+
+
 import * as Images from '../assets/images';
 function Cards({ NomImage, Text, id,prix }) {
 
@@ -33,22 +36,18 @@ function Cards({ NomImage, Text, id,prix }) {
 
 function Acheter() {
   return <>
-  <p class="title">Booking</p>
+  <p class="titler">Booking</p>
   <div class="dropdown">
         <select>
             <option value="New"><span>New</span></option>
             <option value="Ocassion"><span>Ocassion</span></option>
             <option value="option3"><span>Option 1</span></option>
         </select>
-        <select>
-            <option value="New"><span>New</span></option>
-            <option value="Ocassion"><span>Ocassion</span></option>
-            <option value="option3"><span>Option 1</span></option>
-        </select>
+   
     </div>
 
     <div class="container_grid">
-    <Cards NomImage="AudiA3" Text="Porsche 718 Cayman S" id="1" prix="400" />
+    <Cards NomImage="AudiA3" Text="Porsche 718 Cayman S" id="1" prix="400"  />
     <Cards NomImage="AudiA3" Text="Porsche 718 Cayman S" id="2" prix="350"/>
     <Cards NomImage="AudiA3" Text="Porsche 718 Cayman S" id="3" prix="450"/>
     <Cards NomImage="AudiA3" Text="Porsche 718 Cayman S" id="4" prix="400"/>

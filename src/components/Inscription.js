@@ -29,7 +29,7 @@ function Inscription() {
 
   return (
     <div className="container_inscription">
-    <h2>Get’s started.</h2>
+    <p>Inscription</p>
     <form onSubmit={handleSubmit}>
       <input
         type="text"
@@ -59,7 +59,7 @@ function Inscription() {
         placeholder="Confirm Password"
         required
       />
-      <button type="submit" className="inscription-button">Sign Up</button>
+      <button type="submit" className="inscription-button"><p>Inscription</p></button>
     </form>
   </div>
   );

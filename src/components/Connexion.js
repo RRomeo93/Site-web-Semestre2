@@ -20,7 +20,7 @@ function SignIn() {
 
   return (
     <div className="signin-container">
-      <h2>Get’s started !</h2>
+      <p>Connexion</p>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -38,17 +38,17 @@ function SignIn() {
         />
         <div className="signin-remember">
           <label>
-            <input type="checkbox" name="remember" /> Remember me
-            <a href="/forgot-password"> | Forgot your password ?</a>
+            <input type="checkbox" name="remember" /> <span>Remember me</span>
+            <a href="/forgot-password"> <span> | Mot de passe oublié ?</span></a>
           </label>
         </div>
-        <button type="submit" className="signin-button">Sign In</button>
+        <button type="submit" className="signin-button"><p>Connexion</p></button>
         <div className="signin-footer">
           <span>
             Don't have an account ? 
           </span>
           <br></br>
-          <a href="/inscription">Sign up </a>
+          <a href="/inscription"><span>Inscription</span></a>
         </div>
       </form>
     </div>
