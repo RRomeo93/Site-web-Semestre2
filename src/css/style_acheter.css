@@ -62,6 +62,7 @@ select {
 
 .card{
     cursor:pointer;
+    z-index:1;
 }
 .svg:hover{
     transform: scale(1);
