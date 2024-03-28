@@ -1,0 +1,117 @@
+
+.titler{
+    font-family: Dm Sans;
+    font-size: 1.5em;
+    font-weight:500;
+    margin-left:2rem;
+    margin-top:1.5rem;
+
+
+    
+}
+
+.dropdown{
+    padding:2rem;
+}
+
+select {
+    background-color:  #FFFFFF;
+    padding: 10px;
+    color:grey;
+    font-family: DM Sans;
+    font-weight:800;
+    
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    
+}
+
+
+.dropdown select option:hover {
+    background-color: #f1f1f1;
+    
+}
+
+
+.container_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* Colonnes dynamiques avec une largeur minimale de 200px */
+    gap: 20px; /* Espace entre les éléments */
+    padding: 2rem;
+}
+
+/* Style des éléments enfants de la grille */
+.container_grid > * {
+    background-color: #FFFFFF;
+    height:15rem;
+    padding:2rem;
+
+    border-radius:1rem;
+}
+
+.titre_cards{
+    margin-bottom:0.7rem;
+}
+.coupe{
+    padding:0;
+    margin-left:0;
+    
+   
+}
+
+.card{
+    cursor:pointer;
+    z-index:1;
+}
+.svg:hover{
+    transform: scale(1);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+.container_image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.container_prix{
+    display:flex;
+    margin-top:1.5rem;
+}
+
+.reset{
+    padding:0;
+    margin-left:0.3rem;
+}
+
+.resete{
+    padding:0;
+    margin-left:0.3rem;
+    margin-top:-0.15rem;
+}
+
+.gauche{
+    margin-left:1.8rem;
+}
+
+.prix{
+    font-size:1rem;
+    margin:0;
+    padding:0;
+   
+    margin-left:6.5rem;
+}
+
+
+.day{
+    margin-top:-0.15rem;
+    margin:0;
+    padding:0;
+}

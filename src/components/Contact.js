@@ -2,9 +2,22 @@ import React from 'react';
 import '../css/style_contact.css';
 function Contact() {
   return <>
-  <div class="container_contact">
+  <div className="container_inscription">
+    <p>Contactez-nous</p>
+    <form  action="#" method="post"> 
 
-    ENDROIT POUR LA PAGE CONTACT
+    <input type="text" id="name" name="name" required placeholder="Votre Nom"></input>
+   
+    <input type="email" id="email" name="email" required placeholder="exemple@gmail.com"></input>
+   
+    <textarea id="message" name="message" required></textarea>
+    <div class="container_checkbox">
+    <button class="inscription-button" type="submit" value="Submit"><p>Envoyer</p></button>
+    </div>
+      
+    </form>
+
+
   </div>
   </>;
 }

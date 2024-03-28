@@ -2,3 +2,29 @@
     background-color: red;
     
 }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #B1B5C3;
+  border-radius: 10px;
+  height:2rem;
+  margin-top:1.5rem;
+  outline:none;
+}
+
+
+textarea{
+  margin-top:1.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #B1B5C3;
+  border-radius: 10px;
+  height:7rem;
+  outline:none;
+  resize:none;
+}
