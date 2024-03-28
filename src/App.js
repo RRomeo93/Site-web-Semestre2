@@ -14,15 +14,8 @@ git merge (branche) (pour fusionner la branche avec la master dans ton pc)
 git push origin master (pour mettre sur le github) ( depot distant) */
 
 
-// git checkout -b branche // pour creer
+// git checkout -b branche// pour creer
 // git push -u origin test
-
-//<<<<<<< HEAD
-// git checkout -b branche // pour creer
-// git push -u origin test
-//=======
-
-
 
 
 import './css/style_sidebar.css';
