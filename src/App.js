@@ -8,8 +8,8 @@ git add .
 git commit -m "Commentaire de votre choix"
 git push origin (branche */
 
-/* git checkout master ( pour aller sur la branche)
-git pull origin master (pour récupérer les modifications du github en local)
+/* git checkoutgit  master ( pour aller sur la branche)
+git pull origin main (pour récupérer les modifications du github en local)
 git merge (branche) (pour fusionner la branche avec la master dans ton pc)
 git push origin master (pour mettre sur le github) ( depot distant) */
 
@@ -28,10 +28,13 @@ import Acheter from './components/Acheter';
 import Vendre from './components/Vendre';
 import PageVierge from './components/Pagevierge';
 import Contact from './components/Contact';
+import APropos from './components/APropos';
 import Inscription from './components/Inscription';
 import Connexion from './components/Connexion';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './css/transitions.css';
+import Admin from './components/Admin';
+
 
 function AnimatedRoute({ component }) {
   return (
@@ -64,6 +67,8 @@ function App() {
               <Route path="/contact" element={<AnimatedRoute component={<Contact />} />} />
               <Route path="/inscription" element={<AnimatedRoute component={<Inscription />} />} />
               <Route path="/se_connecter" element={<AnimatedRoute component={<Connexion />} />} />
+              <Route path="/a-propos" element={<AnimatedRoute component={<APropos />} />} />
+              <Route path="/admin" element={<Admin />} />
             </Routes>
           </div>
         </div>

@@ -1,0 +1,29 @@
+/* style_accueil.css */
+
+.intro-text {
+    text-align: right; /* Alignez le texte à droite */
+    max-width: 400px; /* Définissez une largeur max pour la zone de texte */
+  }
+  
+  .intro-text h1 {
+    margin-bottom: 0.5em; /* Ajoutez un peu d'espace entre le h1 et le paragraphe */
+  }
+  
+  .intro-text p {
+    margin-bottom: 1em; /* Ajoutez un peu d'espace entre le paragraphe et le bouton */
+  }
+  
+  .intro-text button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .intro-text button:hover {
+    background-color: #666;
+  }
+  
