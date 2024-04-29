@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
 function Admin() {
-  // State to keep track of form inputs
   const [car, setCar] = useState({
     name: '',
-    year: '',
+    year: '', // Ceci pourrait être un nombre, donc assurez-vous que cela soit cohérent avec le type de données dans votre base de données
     gear: '',
-    price: '',
+    price: '', // Assurez-vous que le prix soit un nombre dans votre base de données
     fuel: '',
   });
 
@@ -23,7 +22,7 @@ function Admin() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:3001/api/cars', {
+    fetch('http://localhost/projet_web/api.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -59,13 +58,15 @@ function Admin() {
           placeholder="Name"
           value={car.name}
           onChange={handleChange}
+          required // Cela rend le champ obligatoire
         />
         <input
-          type="text"
+          type="number"
           name="year"
           placeholder="Year"
           value={car.year}
           onChange={handleChange}
+          required
         />
         <input
           type="text"
@@ -73,13 +74,16 @@ function Admin() {
           placeholder="Gear"
           value={car.gear}
           onChange={handleChange}
+          required
         />
         <input
-          type="text"
+          type="number"
           name="price"
           placeholder="Price"
           value={car.price}
           onChange={handleChange}
+          required
+          step="0.01" // Autorise les valeurs décimales pour le prix
         />
         <input
           type="text"
@@ -87,6 +91,7 @@ function Admin() {
           placeholder="Fuel"
           value={car.fuel}
           onChange={handleChange}
+          required
         />
         <button type="submit">Submit</button>
       </form>

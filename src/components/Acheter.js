@@ -11,24 +11,24 @@ function Cards({ NomImage, Text, id,prix }) {
   const ImageComponentBoite = Images["Boite"];
 
   return (
-    <div class="card" data-card-id={id}>
-      <div class="container_titre">
-        <p class="titre_cards">{Text}</p>
-        <span class="coupe">Coupe</span>
+    <div className="card" data-card-id={id}>
+      <div className="container_titre">
+        <p className="titre_cards">{Text}</p>
+        <span className="coupe">Coupe</span>
       </div>
       <br />
       <br/>
-      <div class="container_image">
-        <ImageComponent class="svg" />
+      <div className="container_image">
+        <ImageComponent className="svg" />
       </div>
-      <div class="container_prix">
+      <div className="container_prix">
       <ImageComponentPlace />
-      <span class="reset">4</span>
-      <ImageComponentBoite class="gauche" />
-      <span class="resete">Manuelle</span>
+      <span className="reset">4</span>
+      <ImageComponentBoite className="gauche" />
+      <span className="resete">Manuelle</span>
 
-      <p class="prix">{prix}€</p>
-      <span class="day">/d</span>
+      <p className="prix">{prix}€</p>
+      <span className="day">/d</span>
       </div>
     </div>
   );
@@ -36,8 +36,8 @@ function Cards({ NomImage, Text, id,prix }) {
 
 function Acheter() {
   return <>
-  <p class="titler">Booking</p>
-  <div class="dropdown">
+  <p className="titler">Booking</p>
+  <div className="dropdown">
         <select>
             <option value="New"><span>New</span></option>
             <option value="Ocassion"><span>Ocassion</span></option>
@@ -46,7 +46,7 @@ function Acheter() {
    
     </div>
 
-    <div class="container_grid">
+    <div className="container_grid">
     <Cards NomImage="AudiA3" Text="Porsche 718 Cayman S" id="1" prix="400"  />
     <Cards NomImage="AudiA3" Text="Porsche 718 Cayman S" id="2" prix="350"/>
     <Cards NomImage="AudiA3" Text="Porsche 718 Cayman S" id="3" prix="450"/>

@@ -1,0 +1,14 @@
+.apropos-container {
+    background-color: #f4f4f4; /* Couleur de fond */
+    padding: 20px; /* Espacement interne */
+    border-radius: 8px; /* Bords arrondis */
+  }
+  
+  .apropos-container h1 {
+    color: #333; /* Couleur du texte pour le titre */
+  }
+  
+  .apropos-container p {
+    color: #666; /* Couleur du texte pour le paragraphe */
+  }
+  

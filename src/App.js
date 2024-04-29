@@ -93,14 +93,14 @@ function Onglet({ NomImage, Text }) {
 function Sidebar() {
   return <>
     <aside>
-      <div class="container_sidebar">
+      <div className="container_sidebar">
         <Link to="/accueil"><Onglet NomImage="DashboardIcon" Text="Accueil" /></Link>
         <Link to="/acheter"><Onglet NomImage="ShoppingCart" Text="Acheter" /></Link>
         <Link to="/vendre"><Onglet NomImage="ShoppingBag" Text="Vendre" /></Link>
-        <Link to="/pagevierge"><Onglet NomImage="Assets" Text="Page Vierge" /></Link>
+        <Link to="/a-propos"><Onglet NomImage="Assets" Text="A propos de nous" /></Link>
         <Link to="/contact"><Onglet NomImage="Messages" Text="Contact" /></Link>
 
-        <div class="test">
+        <div className="test">
           <Link to="/inscription"><Onglet NomImage="Assets" Text="S'inscrire" /></Link>
           <Link to="/se_connecter"><Onglet NomImage="Assets" Text="Connexion" /></Link>
         </div>
@@ -114,17 +114,17 @@ function Sidebar() {
 function Nav() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return <>
-    <nav class="Navbar">
-      <div class="Navbarleft">
-        <Images.Logo class="logo" />
+    <nav className="Navbar">
+      <div className="Navbarleft">
+        <Images.Logo className="logo" />
         <p>Adem.</p>
       </div>
-      <div class="Navbarright">
-        <div class="Navbarright_input">
-          <Images.Loupe class="loupe" />
+      <div className="Navbarright">
+        <div className="Navbarright_input">
+          <Images.Loupe className="loupe" />
           <input placeholder='Search a car ..'></input>
         </div>
-        <div class="bouton_navbar">
+        <div className="bouton_navbar">
       
           <div className="Signconnec">
             {isLoggedIn ? (

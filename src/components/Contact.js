@@ -11,8 +11,8 @@ function Contact() {
     <input type="email" id="email" name="email" required placeholder="exemple@gmail.com"></input>
    
     <textarea id="message" name="message" required></textarea>
-    <div class="container_checkbox">
-    <button class="inscription-button" type="submit" value="Submit"><p>Envoyer</p></button>
+    <div className="container_checkbox">
+    <button className="inscription-button" type="submit" value="Submit"><p>Envoyer</p></button>
     </div>
       
     </form>
