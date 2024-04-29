@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function Admin() {
   const [car, setCar] = useState({
     name: '',
+    marque: '',
     year: '', // Ceci pourrait être un nombre, donc assurez-vous que cela soit cohérent avec le type de données dans votre base de données
     gear: '',
     price: '', // Assurez-vous que le prix soit un nombre dans votre base de données
@@ -38,7 +39,7 @@ function Admin() {
     .then(data => {
       console.log('Success:', data);
       // Reset form
-      setCar({ name: '', year: '', gear: '', price: '', fuel: '' });
+      setCar({ name: '', marque: '', year: '', gear: '', price: '', fuel: '' });
       alert('Car added successfully');
     })
     .catch(error => {
@@ -57,6 +58,14 @@ function Admin() {
           name="name"
           placeholder="Name"
           value={car.name}
+          onChange={handleChange}
+          required // Cela rend le champ obligatoire
+        />
+        <input
+          type="text"
+          name="marque"
+          placeholder="marque"
+          value={car.marque}
           onChange={handleChange}
           required // Cela rend le champ obligatoire
         />
