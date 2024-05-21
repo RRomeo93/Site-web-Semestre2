@@ -1,0 +1,60 @@
+/* Styles globaux pour supprimer la scrollbar */
+
+  
+  /* Styles spécifiques pour le container du profil */
+  .container_profil {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height:1000px;
+  }
+  
+  .container_profil p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .container_profil form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .container_profil input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .profil-button {
+    background-color:  #A162F7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  
+  .profil-button p {
+    margin: 0;
+  }
+
+  .profil{
+    background-color:  #A162F7;
+    color:#fff;
+   
+  }
+
+  .profile{
+   
+    color:#fff;
+   
+  }
+  .profil:hover{
+    background-color:  #A162F7;
+    transform:scale(1.1);
+  }
+  

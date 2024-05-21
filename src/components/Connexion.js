@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/style_connexion.css';
 
-function SignIn() {
+function SignIn({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -13,9 +13,38 @@ function SignIn() {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Logique de gestion de la soumission du formulaire
+
+    const formData = new URLSearchParams();
+    formData.append('email', email);
+    formData.append('password', password);
+
+    console.log('Form Data:', formData.toString()); // Log pour vérifier les données envoyées
+
+    try {
+      const response = await fetch('http://localhost/php/login.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: formData.toString(),
+        credentials: 'include' // Inclure les cookies avec la requête
+      });
+
+      const result = await response.json();
+      console.log(result);
+
+      if (result.status === 'success') {
+        alert('Connexion réussie!');
+        onLogin(email === 'admin@admin.com'); // Passer l'information de l'administrateur
+      } else {
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error('Erreur:', error);
+      alert('Erreur lors de la connexion');
+    }
   };
 
   return (
@@ -42,7 +71,8 @@ function SignIn() {
             <a href="/forgot-password"> <span> | Mot de passe oublié ?</span></a>
           </label>
         </div>
-        <button type="submit" className="signin-button"><p>Connexion</p></button>
+    
+        <button type="submit" className="signin-button"><p className="signin">Connexion</p></button>
         <div className="signin-footer">
           <span>
             Don't have an account ? 

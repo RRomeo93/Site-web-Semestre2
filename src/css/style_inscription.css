@@ -27,6 +27,14 @@
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
+    height:3rem;
+  }
+
+  .inscription{
+    color:#fff;
+  }
+  .inscription-button:hover{
+    background-color: #A162F7;
   }
 
   .inscription-button:hover{

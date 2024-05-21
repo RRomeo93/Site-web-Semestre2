@@ -9,3 +9,5 @@ export { ReactComponent as Loupe } from './loupe.svg';
 export { ReactComponent as AudiA3 } from './car-audi-a3.svg';
 export { ReactComponent as Boite } from './boite.svg';
 export { ReactComponent as Place } from './place.svg';
+export { ReactComponent as Accueil } from './carousel-1.svg';
+export { ReactComponent as Exit } from './exit.svg';

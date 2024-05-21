@@ -1,29 +1,96 @@
 /* style_accueil.css */
 
+/* Styles par défaut (desktop) */
+.home-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10%;
+  color: white; /* Mettre le texte en blanc */
+  background-size: cover;
+  background-position: center;
+}
+
 .intro-text {
-    text-align: right; /* Alignez le texte à droite */
-    max-width: 400px; /* Définissez une largeur max pour la zone de texte */
+  text-align: right; /* Alignez le texte à droite */
+  max-width: 400px; /* Définissez une largeur max pour la zone de texte */
+  color: white; /* Mettre le texte en blanc */
+}
+
+.intro-text h1 {
+  margin-bottom: 0.5em; /* Ajoutez un peu d'espace entre le h1 et le paragraphe */
+  color: white; /* Mettre le texte en blanc */
+}
+
+.intro-text p {
+  margin-bottom: 1em; /* Ajoutez un peu d'espace entre le paragraphe et le bouton */
+  color: white; /* Mettre le texte en blanc */
+}
+
+.intro-text button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intro-text button:hover {
+  background-color: #666;
+}
+
+/* Styles pour tablette */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 0 5%;
+    justify-content: center; /* Centrer le conteneur */
+    
   }
-  
+
+ 
+  .intro-text {
+    text-align: center; /* Centrer le texte */
+    max-width: 300px; /* Ajuster la largeur max pour la zone de texte */
+  }
+
   .intro-text h1 {
-    margin-bottom: 0.5em; /* Ajoutez un peu d'espace entre le h1 et le paragraphe */
+    font-size: 1.5em; /* Réduire la taille de la police */
   }
-  
+
   .intro-text p {
-    margin-bottom: 1em; /* Ajoutez un peu d'espace entre le paragraphe et le bouton */
+    font-size: 1em; /* Réduire la taille de la police */
   }
-  
+
   .intro-text button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #555;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 14px; /* Réduire la taille de la police */
   }
-  
-  .intro-text button:hover {
-    background-color: #666;
+}
+
+/* Styles pour téléphone */
+@media (max-width: 425px) {
+  .home-container {
+    padding: 0 2%;
+    justify-content: center; /* Centrer le conteneur */
+    
   }
-  
+
+  .intro-text {
+    text-align: center; /* Centrer le texte */
+    max-width: 250px; /* Ajuster la largeur max pour la zone de texte */
+  }
+
+  .intro-text h1 {
+    font-size: 1.2em; /* Réduire la taille de la police de 60% */
+  }
+
+  .intro-text p {
+    font-size: 0.8em; /* Réduire la taille de la police de 60% */
+  }
+
+  .intro-text button {
+    font-size: 12px; /* Réduire la taille de la police */
+  }
+}

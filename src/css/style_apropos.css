@@ -1,14 +1,76 @@
+/* style_apropos.css */
+
+/* Style par défaut pour les grands écrans */
 .apropos-container {
-    background-color: #f4f4f4; /* Couleur de fond */
-    padding: 20px; /* Espacement interne */
-    border-radius: 8px; /* Bords arrondis */
+  padding: 2rem;
+}
+
+.apropos-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.apropos-team, .apropos-text {
+  width: 48%;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.luxury-car-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.luxury-car-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 1024px) {
+  .apropos-content {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .apropos-container h1 {
-    color: #333; /* Couleur du texte pour le titre */
+
+  .apropos-team, .apropos-text {
+    width: 80%;
+    margin-bottom: 2rem;
   }
-  
-  .apropos-container p {
-    color: #666; /* Couleur du texte pour le paragraphe */
+}
+
+/* Style pour les petits écrans (smartphones) */
+@media (max-width: 768px) {
+  .apropos-container {
+    padding: 1rem;
   }
-  
+
+  .apropos-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apropos-team, .apropos-text {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .luxury-car-image img {
+    width: 100%;
+  }
+}

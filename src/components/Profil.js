@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import '../css/style_inscription.css';
-
-function Inscription() {
+import '../css/style_profil.css';
+function Profil() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -32,36 +31,39 @@ function Inscription() {
     }
 
     const formData = new URLSearchParams();
-    formData.append('username', name);
+    formData.append('name', name);
     formData.append('email', email);
     formData.append('password', password);
 
+    console.log('Form Data:', formData.toString()); // Ajouter un log pour vérifier les données envoyées
+
     try {
-      const response = await fetch('http://localhost/php/register.php', {
+      const response = await fetch('http://localhost/php/updateProfile.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: formData.toString(),
+        credentials: 'include', // Inclure les cookies avec la requête
       });
 
-      const result = await response.text();
+      const result = await response.json();
       console.log(result);
 
-      if (response.ok) {
-        alert('Inscription réussie !');
+      if (result.status === 'success') {
+        alert('Profil mis à jour avec succès!');
       } else {
-        alert('Erreur lors de l\'inscriptione');
+        alert(result.message);
       }
     } catch (error) {
       console.error('Erreur:', error);
-      alert('Erreur lors de l\'inscriptione');
+      alert('Erreur lors de la mise à jour du profil');
     }
   };
 
   return (
-    <div className="container_inscription">
-      <p>Inscription</p>
+    <div className="container_profil">
+      <p>Profil</p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -91,10 +93,10 @@ function Inscription() {
           placeholder="Confirm Password"
           required
         />
-        <button type="submit" className="inscription-button"><p className="inscription">Inscription</p></button>
+        <button type="submit" className="profil"><p className="profile">Mettre à jour</p></button>
       </form>
     </div>
   );
 }
 
-export default Inscription;
+export default Profil;
